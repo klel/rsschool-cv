@@ -12,8 +12,27 @@
 
 ## 🤹‍♂️ Skills
 
+|Field|Worked with|
+|-------------------|---------------------------------------|
+|***frontend***     | js, ts, extjs, css, html, sass        |
+|***backend***      | .net, asp.net mvc, c#, signalR        |
+|***databases***    | ms sql server(t-sql), olap, mysql     |
+|***mobile***       | java, android                         |
+|***tools***        | git, gitlab, swagger, postman, fiddler|
+|***IoT and SCADA***| OSI Soft PI System, ZIoT, MetsoDNA    |
+
 ## 👨‍💻 Code example
-`console.log('Hello world')`
+
+```javascript
+/**
+ * Maximum Triplet Sum
+ */
+function maxTriSum(numbers){
+  return [...new Set(numbers)].sort((a,b) => b-a)
+    .slice(0,3)
+    .reduce((acc, curr)=> acc + curr, 0);
+}
+```
 
 ## 🥷 Experience
 
