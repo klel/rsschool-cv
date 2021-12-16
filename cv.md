@@ -20,3 +20,5 @@
 ## 🤓 Education
 
 ## 🇬🇧 Languages
+- ***Russian*** - native
+- ***English*** - A2 (I'm be able to improve to B2 for a couple of months if it'll be necessary)
