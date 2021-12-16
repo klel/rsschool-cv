@@ -10,6 +10,8 @@
 
 ## 💁‍♂️ About me
 
+Hey everyone!👋 I've been code software for a more than ten years. I have an experience to work with Automation systems and several programming languages. Since *2017* I'm a full stack developer in a gas production domain. Now my goal is a deep dive into frontend world, to improve my *JSCore* and *React* skills and later to work with a public highload services. 
+
 ## 🤹‍♂️ Skills
 
 |Field|Worked with|
@@ -38,7 +40,7 @@ function maxTriSum(numbers){
 
 |Period         | Post                                           | Company         |
 |---------------|------------------------------------------------|-----------------|
-|  *2009-2011*  | freelance and IT outsourcing |       Self employed               |   
+|  *2009-2011*  | Freelance and IT outsourcing |       Self employed               |   
 |  *2011-2012*  | Automation engineer          |       Ltd Sibur Tyumen Gaz        |
 |  *2012-2012*  | Technical supervisor in automation on investment project "Construction of Vyngapurovsky Gas Plant"   |                           Ltd Sibur Tyumen Gaz        |
 |  *2012-2017*  | Supply chain engineer        |       Ltd Gazprom dobycha Noyabrsk|
