@@ -50,7 +50,7 @@ function maxTriSum(numbers){
 
 |Place                |Field                     |Program                         | Graduation period |
 |---------------------|--------------------------|--------------------------------|:-----------------:|
-|Ural State University|Applied Computer Science  |Applied Informatics in Economics| 2005-2009         |
+|Ural State University|Applied Computer Science  |Applied Informatics in Economics| 2004-2009         |
 
 ## 🇬🇧 Languages
 - ***Russian*** - native
