@@ -13,11 +13,15 @@
 ## 🤹‍♂️ Skills
 
 ## 👨‍💻 Code example
-`console.log('Hello world')
+`console.log('Hello world')`
 
 ## 🥷 Experience
 
 ## 🤓 Education
+
+|Place                |Field                     |Program                         | Graduation period |
+|---------------------|--------------------------|--------------------------------|:-----------------:|
+|Ural State University|Applied Computer Science  |Applied Informatics in Economics| 2005-2009         |
 
 ## 🇬🇧 Languages
 - ***Russian*** - native
