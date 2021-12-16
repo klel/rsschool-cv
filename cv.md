@@ -36,6 +36,14 @@ function maxTriSum(numbers){
 
 ## 🥷 Experience
 
+|Period         | Post                                           | Company         |
+|---------------|------------------------------------------------|-----------------|
+|  *2009-2011*  | freelance and IT outsourcing |       Self employed               |   
+|  *2011-2012*  | Automation engineer          |       Ltd Sibur Tyumen Gaz        |
+|  *2012-2012*  | Technical supervisor in automation on investment project "Construction of Vyngapurovsky Gas Plant"   |                           Ltd Sibur Tyumen Gaz        |
+|  *2012-2017*  | Supply chain engineer        |       Ltd Gazprom dobycha Noyabrsk|
+|  *2017-2021*  | Fullstack software developer |       Ltd Gazprom dobycha Noyabrsk|
+
 ## 🤓 Education
 
 |Place                |Field                     |Program                         | Graduation period |
