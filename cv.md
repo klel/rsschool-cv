@@ -22,7 +22,7 @@ Hey everyone!👋 I've been code software for a more than ten years. I have an e
 |***mobile***       | java, android                         |
 |***tools***        | git, gitlab, swagger, postman, fiddler|
 |***IoT and SCADA***| OSI Soft PI System, ZIIoT, MetsoDNA   |
-|***Instruments***  | visual studio, ssms+profiler, powerBI |          |
+|***Instruments***  | visual studio, ssms+profiler, powerBI |
 
 ## 👨‍💻 Code example
 
