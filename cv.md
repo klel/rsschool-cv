@@ -21,7 +21,8 @@ Hey everyone!👋 I've been code software for a more than ten years. I have an e
 |***databases***    | ms sql server(t-sql), olap, mysql     |
 |***mobile***       | java, android                         |
 |***tools***        | git, gitlab, swagger, postman, fiddler|
-|***IoT and SCADA***| OSI Soft PI System, ZIoT, MetsoDNA    |
+|***IoT and SCADA***| OSI Soft PI System, ZIIoT, MetsoDNA   |
+|***Instruments***  | visual studio, ssms+profiler, powerBI |          |
 
 ## 👨‍💻 Code example
 
