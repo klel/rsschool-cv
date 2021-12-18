@@ -1,1 +1,1 @@
-https://klel.github.io/rsschool-cv/cv
+https://klel.github.io/rsschool-cv
