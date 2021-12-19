@@ -13,4 +13,11 @@ main {
 
 footer {
     background-color: rgba(67, 59, 117, 0.438);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 100px;
+    height: 50px;
 }
