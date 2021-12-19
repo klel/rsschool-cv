@@ -1,4 +1,16 @@
-body {
+* {
     margin: 0px;
     padding: 0px
+}
+
+header {
+    background-color: rgba(135, 222, 147, 0.438);
+}
+
+main {
+    background-color: rgb(222, 184, 135, 0.5);
+}
+
+footer {
+    background-color: rgba(67, 59, 117, 0.438);
 }
