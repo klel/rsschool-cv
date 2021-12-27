@@ -5,6 +5,9 @@
 
 header {
     background-color: rgba(135, 222, 147, 0.438);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 main {
@@ -20,4 +23,11 @@ footer {
 footer img {
     width: 100px;
     height: 50px;
+}
+
+.avatar {
+    /* justify-self: center; */
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
 }
