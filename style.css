@@ -3,28 +3,76 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
-    /* max-width: 900px; */
-    margin: 0 auto;
     display: grid;
-    /* grid-column-gap: 4em; */
-    /* justify-items: center; */
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas: "hd hd hd" "main main main" "ft ft ft";
 }
 
 header {
-    background-color: rgba(135, 222, 147, 0.438);
-    /* display: flex; */
-    grid-area: header;
+    /* background-color: rgba(135, 222, 147, 0.438); */
+    grid-area: hd;
 }
 
-nav ul {
-    /* display: flex;
-    flex-direction: row;
-    -ms-flex-align: start; */
-    grid-area: nav;
+.avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
 }
+
+.avatar__name {
+    font-size: 3em;
+    margin: 0px;
+}
+
+.avatar__box {
+    width: 210px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar__img {
+    width: 210px;
+    /* height: 200px; */
+    margin-top: -30px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    /* grid-area: nv; */
+    background: cornsilk;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    transition: all 1s ease;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 16px 8px;
+    color: #256dbe;
+    text-transform: uppercase;
+}
+
+nav li a:hover {
+    color: #f34e4e;
+    text-decoration: underline;
+    background-color: #c4c4c4;
+}
+
+
+/* nav ul {
+    /* display: flex;
+  -ms-flex-align: start; */
 
 main {
     background-color: rgb(222, 184, 135, 0.5);
@@ -35,17 +83,10 @@ footer {
     background-color: rgba(67, 59, 117, 0.438);
     display: flex;
     justify-content: space-around;
-    grid-area: footer;
+    grid-area: ft;
 }
 
 footer img {
     width: 100px;
     height: 50px;
-}
-
-.avatar {
-    /* justify-self: center; */
-    width: 200px;
-    height: 200px;
-    border-radius: 40%;
 }
