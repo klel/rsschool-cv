@@ -5,8 +5,8 @@
 body {
     display: grid;
     font-family: 'Roboto', sans-serif;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-areas: "hd hd hd" "main main main" "ft ft ft";
+    grid-template-columns: 1fr 2fr 100px;
+    grid-template-areas: "hd hd hd" "side main main" "ft ft ft";
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 
 .avatar__name {
     font-size: 3em;
-    margin: 0px;
+    margin: auto;
 }
 
 .avatar__box {
@@ -67,6 +67,10 @@ nav li a:hover {
     color: #f34e4e;
     text-decoration: underline;
     background-color: #c4c4c4;
+}
+
+aside {
+    grid-area: side;
 }
 
 
