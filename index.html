@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elmar Klimov</title>
 
+    <!-- imports -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github.min.css" integrity="sha512-0aPQyyeZrWj9sCA46UlmWgKOP0mUipLQ6OZXu8l4IcAmD2u31EPEy9VcIMvl7SoAaKe8bLXZhYoMaE/in+gcgA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/javascript.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js" integrity="sha512-Pbb8o120v5/hN/a6LjF4N4Lxou+xYZ0QcVF8J6TWhBbHmctQWd8O6xTDmHpE/91OjPzCk4JRoiJsexHYg4SotQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Google Fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <!-- Google Fonts end-->
 </head>
 
 <body>
@@ -82,7 +85,8 @@
                 About me
             </h2>
             <p>
-                Short story about me
+                Hey everyone!👋 I've been code software for a more than ten years. I have an experience to work with Automation systems and several programming languages. Since *2017* I'm a full stack developer in a gas production domain. Now my goal is a deep dive into
+                frontend world, to improve my *JSCore* and *React* skills and later to work with a public highload services.
             </p>
         </article>
 
@@ -91,7 +95,15 @@
                 Code example
             </h2>
             <p>
-                <code>Put here code example</code>
+                <pre><code class="language-javascript">/**
+  * Maximum Triplet Sum
+  */
+function maxTriSum(numbers){
+  return [...new Set(numbers)].sort((a,b) => b-a)
+                              .slice(0,3)
+                              .reduce((acc, curr)=> acc + curr, 0);
+                            }</code>
+              </pre>
             </p>
         </article>
         <article>
@@ -116,6 +128,7 @@
         <div>© 2021 by klel</div>
         <a target="_blank" href="https://rs.school/js/"><img src="./assets/rs_school_js.svg" alt="RS school link"></a>
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>
