@@ -39,9 +39,6 @@
                     <a href="#skillsId">Skills</a>
                 </li>
                 <li>
-                    <a href="#codeId">Code example</a>
-                </li>
-                <li>
                     <a href="#experianceId">Experience</a>
                 </li>
                 <li>
@@ -49,6 +46,9 @@
                 </li>
                 <li>
                     <a href="#languageId">Language</a>
+                </li>
+                <li>
+                    <a href="#codeId">Code</a>
                 </li>
             </ul>
         </nav>
@@ -58,7 +58,7 @@
             <h2>
                 Contacts
             </h2>
-            <p>
+            <div>
                 <ul>
                     <li>
                         <a target="_blank" href="https://t.me/klimelm" class="contacts__item">
@@ -76,13 +76,13 @@
                         </a>
                     </li>
                 </ul>
-            </p>
+            </div>
         </article>
         <article id="skillsId" class="skills">
             <h2>
                 Skills
             </h2>
-            <p>
+            <div class="skill__wrapper">
                 <section class="skills__frontend">
                     <div>
                         <h3>Frontend</h3>
@@ -106,7 +106,8 @@
                         <li>c#</li>
                         <li>.net framework</li>
                         <li>asp.net mvc</li>
-                        <li>ms sql server(t-sql)</li>
+                        <li>ms sql server(t-sql dialect)</li>
+                        <li>mySql</li>
                         <li>olap</li>
                         <li>sass</li>
                     </ul>
@@ -133,7 +134,9 @@
                         <li>fiddler</li>
                         <li>visual studio</li>
                         <li>ssms</li>
+                        <li>sql profiller tools</li>
                         <li>powerBI</li>
+                        <li>CLI</li>
                     </ul>
                 </section>
                 <section>
@@ -147,20 +150,53 @@
                         <li>MetsoDNA</li>
                     </ul>
                 </section>
-            </p>
+            </div>
         </article>
-        <article class="language">
+        <article id="languageId" class="language">
             <h2>
                 Language
             </h2>
-            <p>
+            <div>
                 <div class="language__flag">
                     <img src="./assets/russia-flag.svg" alt="RU flag" />
                 </div>
                 <div class="language__flag">
                     <img src="./assets/united-kingdom-flag.svg" alt="UK flag" />
                 </div>
-            </p>
+            </div>
+        </article>
+        <article id="educationId" class="education">
+            <h2>
+                Education
+            </h2>
+            <h3>
+                Ural State University
+            </h3>
+            <div>Applied informatics in economics</div>
+            <div>2004-2009</div>
+            <section>
+                <h3>
+                    Certificates and selfimprovment
+                </h3>
+                <ul>
+                    <li>
+                        <div>Rsschool</div>
+                        <div>Currently</div>
+                    </li>
+                    <li>
+                        <div>PostgreSQL base course</div>
+                        <div>2020</div>
+                    </li>
+                    <li>
+                        <div>Microsoft Certificate Analyzing Data with Power BI</div>
+                        <div>2019</div>
+                    </li>
+                    <li>
+                        <div>Javarush- 34 level</div>
+                        <div>2017</div>
+                    </li>
+                </ul>
+            </section>
         </article>
     </aside>
     <main>
@@ -174,37 +210,61 @@
             </p>
         </article>
 
-        <article id="codeId">
-            <h2>
-                Code example
-            </h2>
-            <p>
-                <pre><code class="language-javascript">/**
-  * Maximum Triplet Sum
-  */
-function maxTriSum(numbers){
-  return [...new Set(numbers)].sort((a,b) => b-a)
-                              .slice(0,3)
-                              .reduce((acc, curr)=> acc + curr, 0);
-                            }</code>
-              </pre>
-            </p>
-        </article>
         <article>
             <h2>
                 Experience
             </h2>
-            <p>
-
-            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Company</th>
+                        <th>What did I do</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2009-2011</td>
+                        <td>Self employed IT outsourcing</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti molestiae saepe officia totam laboriosam alias dicta quasi laborum nostrum? Suscipit quaerat, nostrum repellendus fuga delectus in libero fugit necessitatibus tempora.</td>
+                    </tr>
+                    <tr>
+                        <td>2009-2011</td>
+                        <td>Self employed IT outsourcing</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti molestiae saepe officia totam laboriosam alias dicta quasi laborum nostrum? Suscipit quaerat, nostrum repellendus fuga delectus in libero fugit necessitatibus tempora.</td>
+                    </tr>
+                    <tr>
+                        <td>2011-2012</td>
+                        <td>Self employed IT outsourcing</td>
+                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti molestiae saepe officia totam laboriosam alias dicta quasi laborum nostrum? Suscipit quaerat, nostrum repellendus fuga delectus in libero fugit necessitatibus tempora.</td>
+                    </tr>
+                    <tr>
+                        <td>2009-2011</td>
+                        <td>Self employed IT outsourcing</td>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti molestiae saepe officia totam laboriosam alias dicta quasi laborum nostrum? Suscipit quaerat, nostrum repellendus fuga delectus in libero fugit necessitatibus
+                                tempora.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
-        <article>
+        <article id="codeId">
             <h2>
-                Education
+                Code example
             </h2>
-            <p>
-                Put here education
-            </p>
+            <div>
+                <pre><code class="language-javascript">/**
+* Maximum Triplet Sum
+*/
+function maxTriSum(numbers){
+return [...new Set(numbers)].sort((a,b) => b-a)
+                            .slice(0,3)
+                            .reduce((acc, curr)=> acc + curr, 0);
+                          }</code>
+            </pre>
+            </div>
         </article>
     </main>
     <footer>
