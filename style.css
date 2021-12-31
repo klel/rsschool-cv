@@ -20,6 +20,11 @@ h2 {
     font-size: 1.5em;
 }
 
+h3 {
+    /* font-weight: 50; */
+    font-size: 0.9em;
+}
+
 header {
     /* background-color: rgba(135, 222, 147, 0.438); */
     grid-area: hd;
@@ -151,8 +156,21 @@ footer img {
 }
 
 
-/* .contacts h2 {
-    text-align: center; */
+/* Skills  */
 
+.skills div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
 
-/* } */
+.skills img {
+    width: 23px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.skills ul>li {
+    display: inline-block;
+}
