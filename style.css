@@ -1,3 +1,5 @@
+/* General */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,26 +9,73 @@
 body {
     display: grid;
     font-family: 'Roboto', sans-serif;
-    grid-template-columns: 1fr 2fr 100px;
-    grid-template-rows: 1fr 1fr 1fr 100px 100px 100px;
-    grid-template-areas: "hd hd hd" "side main main" "side main main" "side main main" "side main main" "ft ft ft";
+    grid-template-columns: 1.2fr 2fr 10px;
+    grid-template-rows: 1fr 4fr 50px;
+    grid-template-areas: "hd hd hd" "side main main" "ft ft ft";
     max-width: 760px;
     margin: auto;
 }
 
 h2 {
-    /* color: red; */
     font-weight: 100;
     font-size: 1.5em;
+    margin: 10px 5px 10px;
 }
 
 h3 {
-    /* font-weight: 50; */
     font-size: 0.9em;
 }
 
+ul {
+    list-style-type: none;
+}
+
+p {
+    text-indent: 1em;
+    text-align: justify;
+}
+
+table {
+    border-collapse: collapse;
+    /* border: 1px solid; */
+    table-layout: fixed;
+    /* width: 100%; */
+}
+
+thead th:nth-child(1) {
+    width: 10%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 70%;
+}
+
+th,
+td {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* th {
+    /* font-size: 1.2em; */
+
+
+/* } */
+
+
+/* tr {
+    border-bottom: solid 1px;
+} */
+
+
+/* Header */
+
 header {
-    /* background-color: rgba(135, 222, 147, 0.438); */
     grid-area: hd;
 }
 
@@ -54,16 +103,10 @@ header {
     margin-top: -30px;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* grid-area: nv; */
-    /* background: cornsilk; */
     padding: 0;
     margin: 0;
     border-bottom: solid 3px #E8E8E8;
@@ -71,7 +114,7 @@ ul {
     height: 70px;
 }
 
-nav li {
+.nav li {
     display: block;
     align-self: center;
     justify-self: center;
@@ -80,21 +123,28 @@ nav li {
     text-align: center;
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     transition: all .8s ease;
     color: #256dbe;
 }
 
-nav li a:hover {
+.nav li a:hover {
     display: inline-block;
     width: 120px;
     border-left: solid 2px #e8e8e8;
     border-right: solid 2px #e8e8e8;
 }
 
-aside {
-    grid-area: side;
+
+/* Main */
+
+main {
+    grid-area: main;
+}
+
+main article {
+    margin-bottom: 30px;
 }
 
 code {
@@ -102,43 +152,12 @@ code {
     overflow: hidden;
 }
 
-p {
-    text-indent: 1em;
-    text-align: justify;
-}
-
-h2 {
-    margin: 10px 5px 10px;
-}
-
-
-/* nav ul {
-    /* display: flex;
-  -ms-flex-align: start; */
-
-main {
-    /* background-color: rgb(222, 184, 135, 0.5); */
-    grid-area: main;
-}
-
-footer {
-    /* background-color: rgba(156, 144, 238, 0.438); */
-    margin-top: 20px;
-    display: flex;
-    place-content: flex-end space-around;
-    align-items: center;
-    /* justify-content: space-around;
-    align-content: flex-end; */
-    grid-area: ft;
-}
-
-footer img {
-    width: 80px;
-    height: 40px;
-}
-
 
 /* Contacts */
+
+aside {
+    grid-area: side;
+}
 
 .contacts__item img {
     width: 32px;
@@ -147,23 +166,22 @@ footer img {
 
 .contacts ul {
     display: flex;
-    /* justify-content: space-around; */
 }
 
 .contacts li {
     margin-left: 5px;
-    /* justify-content: space-around; */
 }
 
 
 /* Skills  */
 
-.skills div {
+
+/* .skills .skill__wrapper {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-}
+} */
 
 .skills img {
     width: 23px;
@@ -173,12 +191,21 @@ footer img {
 
 .skills ul>li {
     display: inline-block;
-    border-right: solid 1px gray;
+    border-right: solid 1px #7c7777;
     padding: 0px 5px;
 }
 
 .skills section {
     margin: 5px 5px 5px;
+    border-bottom: solid 1px #E8E8E8;
+    padding-bottom: 10px;
+}
+
+.skills section div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -189,4 +216,20 @@ footer img {
     height: 23px;
     /* border-radius: 50%; */
     overflow: hidden;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    place-content: flex-end space-around;
+    align-items: center;
+    grid-area: ft;
+}
+
+footer img {
+    width: 80px;
+    height: 40px;
 }
