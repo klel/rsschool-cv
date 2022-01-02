@@ -9,15 +9,20 @@
 body {
     display: grid;
     font-family: 'Roboto', sans-serif;
-    grid-template-columns: 1.2fr 2fr 10px;
+    grid-template-columns: 1.2fr 2fr 50px;
     grid-template-rows: 1fr 4fr 50px;
     grid-template-areas: "hd hd hd" "side main main" "ft ft ft";
     max-width: 760px;
     margin: auto;
 }
 
+h1 {
+    display: inline-block;
+    width: 200px;
+}
+
 h2 {
-    font-weight: 100;
+    /* font-weight: 100; */
     font-size: 1.5em;
     margin: 10px 5px 10px;
 }
@@ -35,42 +40,9 @@ p {
     text-align: justify;
 }
 
-table {
-    border-collapse: collapse;
-    /* border: 1px solid; */
-    table-layout: fixed;
-    /* width: 100%; */
+pre {
+    margin: 0;
 }
-
-thead th:nth-child(1) {
-    width: 10%;
-}
-
-thead th:nth-child(2) {
-    width: 20%;
-}
-
-thead th:nth-child(3) {
-    width: 70%;
-}
-
-th,
-td {
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-
-/* th {
-    /* font-size: 1.2em; */
-
-
-/* } */
-
-
-/* tr {
-    border-bottom: solid 1px;
-} */
 
 
 /* Header */
@@ -81,8 +53,8 @@ header {
 
 .avatar {
     display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
+    /* align-items: center; */
+    flex-direction: row;
 }
 
 .avatar__name {
@@ -95,6 +67,7 @@ header {
     height: 220px;
     overflow: hidden;
     border-radius: 50%;
+    margin-right: 70px;
 }
 
 .avatar__img {
@@ -136,6 +109,34 @@ header {
     border-right: solid 2px #e8e8e8;
 }
 
+.avatar__joke {
+    width: 180px;
+    /* display: inline; */
+    /* flex-direction: row-reverse; */
+}
+
+.avatar span {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    display: inline-block;
+    width: 150px;
+    /* position: absolute;
+  top: 90px;
+  right: 150px; */
+    transform: rotate(-30deg);
+    position: relative;
+    top: 70px;
+}
+
+.avatar__arrow {
+    width: 120px;
+    height: 100px;
+    transform: scaleX(-1) rotate(180deg);
+    position: relative;
+    top: -100px;
+    left: -60px;
+}
+
 
 /* Main */
 
@@ -150,6 +151,11 @@ main article {
 code {
     padding: 10px;
     overflow: hidden;
+}
+
+.experience img {
+    width: 96px;
+    height: 48px;
 }
 
 
