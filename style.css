@@ -28,7 +28,8 @@ h2 {
     margin: 10px 5px 10px;
 }
 
-h3 {
+h3,
+h4 {
     font-size: 0.9em;
 }
 
@@ -169,8 +170,13 @@ code {
     padding-bottom: 10px;
 }
 
+.experience p {
+    margin-bottom: 10px;
+}
+
 .experience__company {
     order: -1;
+    text-indent: 1em;
 }
 
 .experience__postwrapper {
@@ -185,6 +191,14 @@ code {
 
 .experience__postwrapper ul {
     margin-bottom: 10px;
+}
+
+.experience__period {
+    font-style: italic;
+}
+
+.experience__post {
+    font-weight: 500;
 }
 
 
