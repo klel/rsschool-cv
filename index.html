@@ -54,6 +54,9 @@
                     <a href="#languageId">Language</a>
                 </li>
                 <li>
+                    <a href="#portfolioId">PF</a>
+                </li>
+                <li>
                     <a href="#codeId">Code</a>
                 </li>
             </ul>
@@ -68,7 +71,7 @@
                 <ul>
                     <li>
                         <a target="_blank" href="https://t.me/klimelm" class="contacts__item">
-                            <img src="./assets/telegram_logo.svg" alt="Telegram contact ref " />
+                            <img src="./assets/telegram_logo.svg" alt="Telegram contact ref" />
                         </a>
                     </li>
                     <li>
@@ -148,7 +151,7 @@
                 <section>
                     <div>
                         <h3>IoT and SCADA</h3>
-                        <img src="./assets/iot.svg " alt="IoT icon " />
+                        <img src="./assets/iot.svg " alt="IoT icon" />
                     </div>
                     <ul>
                         <li>OSI Soft PI System</li>
@@ -158,50 +161,57 @@
                 </section>
             </div>
         </article>
-        <article id="languageId" class="language ">
+        <article id="languageId" class="language">
             <h2>
                 Language
             </h2>
             <div>
-                <div class="language__flag ">
-                    <img src="./assets/russia-flag.svg " alt="RU flag " />
-                    <span>Native. Competent writing & speaking skills</span>
+                <div class="language__wrapper">
+                    <div class="language__flag">
+                        <img src="./assets/russia-flag.svg " alt="RU flag" />
+                    </div>
+                    <span>Native
+                    </span>
                 </div>
-                <div class="language__flag ">
-                    <img src="./assets/united-kingdom-flag.svg " alt="UK flag " />
+                <div class="language__wrapper">
+                    <div class="language__flag">
+                        <img src="./assets/united-kingdom-flag.svg" alt="UK flag" />
+                    </div>
                     <span>A2-B1</span>
                 </div>
             </div>
         </article>
-        <article id="educationId" class="education ">
+        <article id="educationId" class="education">
             <h2>
                 Education
             </h2>
-            <h3>
-                Ural State University
-            </h3>
-            <div>Applied informatics in economics</div>
-            <div>2004-2009</div>
-            <section>
+            <section class="education__university">
+                <h3>
+                    Ural State University
+                </h3>
+                <div>Applied informatics in economics</div>
+                <div>2004-2009</div>
+            </section>
+            <section class="education__cert">
                 <h3>
                     Certificates and selfimprovment
                 </h3>
                 <ul>
                     <li>
                         <div>Rsschool</div>
-                        <div>Currently</div>
+                        <div class="education__period">Currently</div>
                     </li>
                     <li>
                         <div>PostgreSQL base course</div>
-                        <div>2020</div>
+                        <div class="education__period">2020</div>
                     </li>
                     <li>
                         <div>Microsoft Certificate Analyzing Data with Power BI</div>
-                        <div>2019</div>
+                        <div class="education__period">2019</div>
                     </li>
                     <li>
                         <div>Javarush- 34 level</div>
-                        <div>2017</div>
+                        <div class="education__period">2017</div>
                     </li>
                 </ul>
             </section>
@@ -213,8 +223,8 @@
                 About me
             </h2>
             <p>
-                Hey everyone!👋 I've been code software for a more than ten years. I have an experience to work with Automation systems and several programming languages. Since *2017* I'm a full stack developer in a gas production domain. Now my goal is a deep dive into
-                frontend world, to improve my *JSCore* and *React* skills and later to work with a public highload services.
+                Hey everyone!👋 I've been code software for a more than ten years. I have an experience to work with Automation systems and several programming languages. Since <i>2017</i> I'm a full stack developer in a gas production domain. Now my
+                goal is a deep dive into frontend world, to improve my <dfn>JSCore</dfn> and <dfn>React</dfn> skills and later to work with a public highload services.
             </p>
         </article>
 
@@ -223,42 +233,66 @@
                 Experience
             </h2>
             <section>
-                <h3>Gazprom dobycha Noyabrsk</h3>
+                <h3 class="experience__company">Gazprom dobycha Noyabrsk Ltd</h3>
                 <img src="./assets/gazprom.svg " alt="Gazprom logo" />
-                <span>2017-2021</span>
-                <span>Fullstack developer</span>
-                <p>
-                    We develop High level dispatcherization projects in natural gaz production domain. My main and central projects are
-                </p>
-                <ul>
-                    <li>
-                        <h4>- "Datahub "</h4>
-                        - Mnemoschemes visualisation. Stack- .net c#, signalR, TypeScript, svg, highcharts, scss, jquery.</li>
-                    <li>
-                        <h4>- "WEB Dispatcher ".</h4>
-                        Multimodule ASP NET MVC Project. Stack- c#, .NET, .NET Core, MS SQL Server 2014 (TSQL, CTE is a manna from heaven😇), OLAP Cubes, extjs 6.2, javascript(es5), MS Power BI, MS Sharepoint. Some experiments with postrgresSQL.</li>
-                    <li>-Various lagacy Delphi projects (thanks God I fixed a couple of bugs and that's it:))</li>
-                    <li>I had some experience with OSI Soft IoT (AFSDK, WEB API a little). As well as IoT Zyfra which based on microservices architecture.</li>
-                    <li> </li>
-                </ul>
-                <p>My toolset - Visual Studio '16 Pro, SSMS+profiler, Postman, NiFi, Swagger, GitExtensions (we used local gitlab), Fiddler etc... My last two tasks: - New data provider for mnemoschemes portal(WEB API client) - Planning module with Gantt
-                    chart (highcharts) symbiosis with ext js on client side) PS:Sometimes I forced myself to code in TDD style, but it is not exact:)</p>
-                <span>2011-2017</span>
-                <span>Supply chain Engineer</span>
-                <p>Investment supplies by automation devices</p>
+                <span class="experience__period">2017-2021</span>
+                <span class="experience__post">Fullstack developer</span>
+                <div class="experience__postwrapper">
+                    <p>
+                        We develop High level dispatcherization projects in natural gaz production domain. My main and central projects are
+                    </p>
+                    <ul>
+                        <li>
+                            <h4>"Datahub"</h4>
+                            Mnemoschemes visualisation. Stack- .net c#, signalR, TypeScript, svg, highcharts, scss, jquery.
+                        </li>
+                        <li>
+                            <h4>"WEB Dispatcher"</h4>
+                            Multimodule ASP NET MVC Project. Stack- c#, .NET, .NET Core, MS SQL Server 2014 (TSQL), OLAP Cubes, extjs 6.2, javascript(es5), MS Power BI, MS Sharepoint. Some experiments with postrgresSQL.
+                        </li>
+                        <li>
+                            <h4>IoT</h4>
+                            I had some experience with OSI Soft IoT (AFSDK, WEB API a little). As well as IoT Zyfra which based on microservices architecture.
+                        </li>
+                        <li>
+                            <h4>Other</h4>
+                            Various lagacy Delphi projects (thanks God I fixed a couple of bugs and that's it:))And some desktop .net applications.
+                        </li>
+                    </ul>
+                    <div>
+                        <p>
+                            My toolset - Visual Studio '16 Pro, SSMS+profiler, Postman, NiFi, Swagger, GitExtensions (we used local gitlab), Fiddler etc...
+                        </p>
+                        <p>
+                            My last two tasks:
+                        </p>
+                        <ul class="experience__tasks">
+                            <li>New data provider for mnemoschemes portal(WEB API client)</li>
+                            <li>Planning module with Gantt chart (highcharts) symbiosis with ext js on client side</li>
+                        </ul>
+                        <p>
+                            PS:Sometimes I forced myself to code in TDD style, but it is not exact:)
+                        </p>
+                    </div>
+                </div>
+                <div class="experience__postwrapper">
+                    <span class="experience__period">2011-2017</span>
+                    <span class="experience__post">Supply chain Engineer</span>
+                    <p>Investment supplies by automation devices</p>
+                </div>
             </section>
             <section>
-                <h3>Sibur</h3>
+                <h3>Sibur Tyumen Gaz Ltd</h3>
                 <img src="./assets/sibur.png" alt="Sibur neft logo" />
-                <span>07.2011-12.2011</span>
-                <span>Engineer</span>
-                <p>Automation processes, logic controllers, project management by automation etc</p>
+                <span class="experience__period">07.2011-12.2011</span>
+                <span class="experience__post">Lead specialist in automation</span>
+                <p>Automation processes, logic controllers, project management in automation etc</p>
             </section>
             <section>
-                <h3>NoyabrskNefteGazAutomation</h3>
+                <h3>NoyabrskNefteGazAutomation Ltd</h3>
                 <img src="./assets/gazpromneft.svg" alt="Gazprom neft logo" />
-                <span>2011-2012</span>
-                <span>Engineer</span>
+                <span class="experience__period">2011-2012</span>
+                <span class="experience__post">Engineer</span>
                 <p>METSO DNA SCADA maintenance, pressure, temperature sensors, valves, flowmeters etc... Technology stack-
                 </p>
                 <ul>
@@ -266,14 +300,23 @@
                     <li>- Delphi VCL</li>
                     <li>- .net, C#, winforms</li>
                 </ul>
-
             </section>
             <section>
                 <h3>IT outsourcing (self employed)</h3>
-                <img src="./assets/no_logo.svg " alt="Image for Yamit " />
+                <img src="./assets/no_logo.svg " alt="Image for Yamit" />
                 <span>2009-2011</span>
+                <span class="experience__post">All in one Engineer</span>
                 <p>I had setting up servers - AD, DNS, DHCP etc Configuring switches and routers. Support for user computers. Software support and crud applications development(Delphi, PHP5, HTML, CSS)</p>
             </section>
+        </article>
+        <article id="portfolioId">
+            <h2>Portfolio</h2>
+            <div>
+                <ul>
+                    <li><a target="_blank" href="https://klel.github.io/rsschool-cv/">CV</a></li>
+                    <li><a target="_blank" href="https://klel.github.io/rsschool-cv/cv">CV.md</a></li>
+                </ul>
+            </div>
         </article>
         <article id="codeId">
             <h2>
