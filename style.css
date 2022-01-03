@@ -154,8 +154,18 @@ code {
 }
 
 .experience img {
+    order: -2;
     width: 96px;
     height: 48px;
+}
+
+.experience section {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__company {
+    order: -1;
 }
 
 
