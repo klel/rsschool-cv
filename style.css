@@ -232,6 +232,12 @@ aside {
     height: 23px;
     /* border-radius: 50%; */
     overflow: hidden;
+    margin-right: 50px;
+}
+
+.language__wrapper {
+    display: flex;
+    flex-direction: row;
 }
 
 
