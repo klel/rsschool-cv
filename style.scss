@@ -275,6 +275,13 @@ code {
     overflow: hidden;
 }
 
+.belt {
+    background: url('./assets/purple_belt.svg') center/100%;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+
 .experience img {
     order: -2;
     width: 96px;
@@ -318,6 +325,19 @@ code {
 
 .experience__post {
     font-weight: 500;
+}
+
+.portfolio {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    img {
+        width: 150px;
+        height: 100px;
+        margin-right: 10px;
+    }
 }
 
 
