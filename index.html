@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elmar Klimov</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- imports -->
     <link rel="stylesheet" href="style.css">
@@ -24,10 +25,18 @@
     <header>
         <section class="avatar">
             <h1 class="avatar__name">Elmar Klimov</h1>
-            <picture class="avatar__box">
-                <!-- <img class="avatar__img" src="./assets/me.webp" alt="Elmar's face" /> -->
-                <img class="avatar__img" src="./assets/me.JPG" alt="Elmar's face" />
-            </picture>
+            <div class="avatar__box">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/avatar_xs.jpeg">
+                    <!-- <source media="(min-width: 800px)" srcset="elva-800w.jpg"> -->
+                    <img class="avatar__img" src="./assets/me.JPG" alt="Elmar's face" />
+                </picture>
+            </div>
             <div class="avatar__joke">
                 <span>my face when i got your offer :)</span>
                 <img class="avatar__arrow" src="./assets/arrow.svg" alt="Arrow" />
@@ -226,6 +235,10 @@
                 Hey everyone!👋 I've been code software for a more than ten years. I have an experience to work with Automation systems and several programming languages. Since <i>2017</i> I'm a full stack developer in a gas production domain. Now my
                 goal is a deep dive into frontend world, to improve my <dfn>JSCore</dfn> and <dfn>React</dfn> skills and later to work with a public highload services.
             </p>
+            <p>
+                Outside IT I'm a father of a Great boy. Also last 16 years I inspired in martial arts, brazilian jiu-jitsu purple belt owner
+                <span class="belt"></span>
+            </p>
         </article>
 
         <article id="experianceId" class="experience">
@@ -321,10 +334,20 @@
         </article>
         <article id="portfolioId">
             <h2>Portfolio</h2>
-            <div>
+            <div class="portfolio">
                 <ul>
-                    <li><a target="_blank" href="https://klel.github.io/rsschool-cv/">CV</a></li>
-                    <li><a target="_blank" href="https://klel.github.io/rsschool-cv/cv">CV.md</a></li>
+                    <li>
+                        <a target="_blank" href="https://xenodochial-mestorf-b90498.netlify.app"><img src="https://d33wubrfki0l68.cloudfront.net/61f987776b96132d2a1bc270/screenshot_2022-02-01-19-18-21-0000.png" alt="Portfolio"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://hungry-torvalds-8a41de.netlify.app"><img src="https://d33wubrfki0l68.cloudfront.net/61f934a3dc4be2dc2e200d60/screenshot_2022-02-01-13-24-57-0000.png" alt="Shmyndex music"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://jolly-kalam-6c4e48.netlify.app"><img src="https://d33wubrfki0l68.cloudfront.net/61f989933f38e82ae8b7002c/screenshot_2022-02-01-19-27-20-0000.png" alt="Random quotes"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://lucid-lamarr-9acf86.netlify.app"><img src="https://d33wubrfki0l68.cloudfront.net/61f5159b290c8909cd304f52/screenshot_2022-01-29-10-23-35-0000.png" alt="Memory game"></a>
+                    </li>
                 </ul>
             </div>
         </article>
