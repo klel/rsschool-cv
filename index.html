@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elmar Klimov</title>
+    <link href="favicon.ico" type="image/x-icon">
 
     <!-- imports -->
     <link rel="stylesheet" href="style.css">
@@ -24,10 +25,18 @@
     <header>
         <section class="avatar">
             <h1 class="avatar__name">Elmar Klimov</h1>
-            <picture class="avatar__box">
-                <!-- <img class="avatar__img" src="./assets/me.webp" alt="Elmar's face" /> -->
-                <img class="avatar__img" src="./assets/me.JPG" alt="Elmar's face" />
-            </picture>
+            <div class="avatar__box">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./assets/avatar_xs.jpeg">
+                    <!-- <source media="(min-width: 800px)" srcset="elva-800w.jpg"> -->
+                    <img class="avatar__img" src="./assets/me.JPG" alt="Elmar's face" />
+                </picture>
+            </div>
             <div class="avatar__joke">
                 <span>my face when i got your offer :)</span>
                 <img class="avatar__arrow" src="./assets/arrow.svg" alt="Arrow" />
