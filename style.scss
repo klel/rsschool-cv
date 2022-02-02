@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: grid;
     font-family: 'Roboto', sans-serif;
@@ -79,7 +83,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     @media screen and (max-width: 768px) {
         margin-top: 5px;
     }
@@ -189,6 +193,8 @@ header {
     height: 70px;
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        justify-content: center;
+        gap: 5px;
         border: none;
         height: 100%;
         li {
@@ -247,7 +253,7 @@ right: 150px; */
     transform: rotate(-30deg);
     position: absolute;
     top: -75px;
-    left: 25px;
+    left: 60px;
 }
 
 .avatar__arrow {
@@ -256,7 +262,7 @@ right: 150px; */
     transform: scaleX(-1) rotate(180deg);
     position: absolute;
     top: -90px;
-    left: -25px;
+    left: 0;
 }
 
 
