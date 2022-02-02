@@ -16,6 +16,9 @@
 
   menu.addEventListener('click', (e) =>{
     const target = e.target.nodeName;
+    if(!menu.classList.contains('menu--active'))
+      return;
+
     if(target === 'A'){
       toggleActive();
     }
